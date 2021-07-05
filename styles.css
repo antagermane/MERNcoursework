@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(223, 223, 223);
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+}
+
+.profile-photo{
+  max-width: 100%;
+  height: auto;
+}
+
+.card{
+  background-color: rgb(223, 223, 223);
+}
+
+.list-group-item{
+  background-color: rgb(223, 223, 223);
+}
+
+.intro-video{
+  align-content: center;
+}
+
+.navbar{
+  background-color: #bdb7d8;;
+}
+
+a{
+  color: rgb(88, 21, 88)
+}

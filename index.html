@@ -1,1 +1,79 @@
-<h1> testing project page </h1>
+<!doctype html>
+<html lang="en">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="https://antagermane.github.io/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+
+<main>
+
+  <div class="container">
+    <div class="card-group">
+      <div class="card">
+        <img src="./pacmen.png" class="card-img-top" alt="PacMen Exercise Image">
+        <div class="card-body">
+          <h5 class="card-title">PacMen Exercise</h5>
+          <p class="card-text">This is a random PacMen generator. Users can add a new PacMan to the screen by pushing “Add PacMan” button. “Start Game” button triggers PacMan movement at a random velocity. They bounce off screen edges as they hit them.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://github.com/antagermane/projects/tree/main/PacMenExercise">See PacMen Excersise Github Repository</a></small>
+        </div>
+      </div>  
+      <div class="card">
+        <img src="./eyes.png" class="card-img-top" alt="Eye Exercise Image">
+        <div class="card-body">
+          <h5 class="card-title">Eye Exercise</h5>
+          <p class="card-text">A blue screen shows a pair of eyes. Users can interact with the screen by moving the mouse. The eyes will follow the users mouse location.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://github.com/antagermane/projects/tree/main/EyeExercise">See Eye Excersise Github Repository</a></small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./map.png" class="card-img-top" alt="Real Time Bus Tracking Exercise Image">
+        <div class="card-body">
+          <h5 class="card-title">Real Time Bus Tracking</h5>
+          <p class="card-text">Tracks live buses in Boston. Upon opening the screen, a map will show markers for each active bus. The markers are updated every 15s with the new bus location.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><a href="https://github.com/antagermane/projects/tree/main/RealTimeBusTracker">See Real Time Bus Tracking Github Repository</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  $("#myModal").on('hidden.bs.modal', function (e) {
+      $("#myModal iframe").attr("src", $("#myModal iframe").attr("src"));
+  });
+</script>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
